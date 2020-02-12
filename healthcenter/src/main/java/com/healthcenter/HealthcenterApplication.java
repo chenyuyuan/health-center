@@ -1,5 +1,7 @@
 package com.healthcenter;
 
+import com.healthcenter.special.MsgQueue;
+import com.healthcenter.special.NewLinkProcessor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.mybatis.spring.annotation.MapperScan;
