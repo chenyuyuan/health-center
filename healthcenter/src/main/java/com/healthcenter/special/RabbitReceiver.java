@@ -39,7 +39,6 @@ public class RabbitReceiver implements Runnable{
 
     private final static String EXCHANGE_NAME = "amq.direct";
     private final static String QUEUE_NAME = "health_queue";
-    private InfluxDBConnector influxDBConnector; // 创建influxDB连接实例
     private CloudMsgUtil cloudMsgUtil = new CloudMsgUtil(); // 云短信工具
     SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
