@@ -18,7 +18,7 @@ public class TestPageController {
 
     @RequestMapping("/test")
     public String login(HttpServletRequest request) throws InterruptedException {
-        return "test";
+        return "common";
     }
     @RequestMapping("/hhm-login.html")
     public String hhm_login(HttpServletRequest request) throws InterruptedException {
