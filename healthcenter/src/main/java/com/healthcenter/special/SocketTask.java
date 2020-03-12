@@ -748,9 +748,9 @@ public class SocketTask implements Runnable {
         try {
             cloudMsgUtil.sendSingleCloudMsg(objectPhoneNumber,eqpId,message);
             if(!userId.equals(objectId)){
-                String userPhoneNumber = socketTask.userService.queryUserByUserId(userId).getUserTel();
-                cloudMsgUtil.sendSingleCloudMsg(userPhoneNumber,eqpId,message);
-                sendMessageCount++; //说明发了两条短信
+                //String userPhoneNumber = socketTask.userService.queryUserByUserId(userId).getUserTel();
+                //cloudMsgUtil.sendSingleCloudMsg(userPhoneNumber,eqpId,message);
+                //sendMessageCount++; //说明发了两条短信
             }
         } catch (HTTPException | IOException e) {
             e.printStackTrace();
