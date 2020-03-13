@@ -50,7 +50,7 @@ public class ExcelImportController {
                 data.setId(Integer.valueOf((int) row.getCell(0).getNumericCellValue()));
                 data.setName(row.getCell(1).getStringCellValue());
 
-                sheet.getRow(2).getCell(i).setCellType(CellType.STRING);
+                sheet.getRow(i).getCell(2).setCellType(CellType.STRING);
                 data.setPwd(row.getCell(2).getStringCellValue());
 //                SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd");
 //                data.setCreateDate(df.parse(df.format(HSSFDateUtil.getJavaDate(row.getCell(2).getNumericCellValue()))));
